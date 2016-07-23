@@ -16,7 +16,7 @@ import { Blog } from '../entities/blog'
 })
 export class BlogListComponent implements OnInit {
 
-  Blogs;
+  Blogs: Blog[];
 
   constructor(private blogRepository: BlogRepository) { }
 
