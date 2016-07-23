@@ -20,7 +20,7 @@ const packages: any = {
 const materialPkgs:string[] = [
   'core',
   'button',
-  'card',
+  'card'
 ];
 
 materialPkgs.forEach((pkg) => {
