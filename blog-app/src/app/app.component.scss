@@ -1,2 +1,7 @@
 @import '../shared/style/colours.scss';
+@import '../shared/style/variables.scss';
 
+.container{
+    position: absolute;
+    top: $nav-height;
+}

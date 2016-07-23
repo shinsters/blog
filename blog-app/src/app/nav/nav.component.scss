@@ -1,9 +1,10 @@
 @import '../../shared/style/colours.scss';
 @import '../../shared/style/fonts.scss';
+@import '../../shared/style/variables.scss';
 
 // the main container of the nav
 .container{
-    height: 20em;
+    height: $nav-height;
     width: 100%;
     background-color: $gun-metal;
     color: $light-cyan;
