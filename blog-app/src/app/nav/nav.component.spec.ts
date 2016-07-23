@@ -11,9 +11,9 @@ describe('Component: Nav', () => {
     expect(component).toBeTruthy();
   }),
 
-  it('should have as title \'bums\'',
-    inject([NavComponent], (app: NavComponent) => {
-      expect(app.title).toEqual('bums');
-    }));
+  it('should have as title \'bums\'', () => {
+    let component = new NavComponent();
+    expect(component.title).toEqual('John Harrison');
+  })
 
 });
