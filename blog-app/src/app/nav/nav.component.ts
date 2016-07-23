@@ -8,14 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
+  /** the main page header title */
   title = 'John Harrison';
 
   constructor() { 
-    console.log('constructor called');
   }
 
   ngOnInit() {
-    console.log('ngInit called');
   }
-
 }

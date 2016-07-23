@@ -3,6 +3,7 @@ import { enableProdMode } from '@angular/core';
 
 // do I need to import all these seperately?
 import { AppComponent,  environment } from './app/';
+import { appRouterProviders } from './app/app.routes';
 
 import { HTTP_PROVIDERS } from '@angular/http';
 import {disableDeprecatedForms, provideForms} from '@angular/forms'; 
@@ -14,5 +15,6 @@ if (environment.production) {
 bootstrap(AppComponent, [
   disableDeprecatedForms(),
   provideForms(),
-  HTTP_PROVIDERS
-]);
+  HTTP_PROVIDERS,
+  appRouterProviders
+]).catch(err => console.error(err));

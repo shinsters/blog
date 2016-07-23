@@ -6,14 +6,19 @@ import { addProviders, async, inject } from '@angular/core/testing';
 import { NavComponent } from './nav.component';
 
 describe('Component: Nav', () => {
-  it('should create an instance', () => {
-    let component = new NavComponent();
-    expect(component).toBeTruthy();
-  }),
 
-  it('should have as title \'bums\'', () => {
-    let component = new NavComponent();
+  beforeEach(() => {
+    addProviders([NavComponent]);
+  });
+
+  it('should create an instance', () => {
+    inject([NavComponent], (component: NavComponent) => {
+      expect(component).toBeTruthy();
+    })})
+
+  it('should have as title \'John Harrison\'', () => {
+    inject([NavComponent], (component: NavComponent) => {
     expect(component.title).toEqual('John Harrison');
-  })
+  })})
 
 });
