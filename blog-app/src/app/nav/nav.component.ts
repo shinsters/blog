@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
+  title = 'John Harrison';
+
   constructor() { 
     console.log('constructor called');
   }

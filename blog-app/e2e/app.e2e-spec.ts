@@ -7,8 +7,8 @@ describe('blog-app App', function() {
     page = new BlogAppPage();
   });
 
-  it('should display message saying bums', () => {
+  it('should display a title saying John Harrison', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('bums');
+    expect(page.getPageTitle()).toEqual('John Harrison');
   });
 });

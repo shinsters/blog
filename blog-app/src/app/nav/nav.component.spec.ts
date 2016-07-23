@@ -9,5 +9,11 @@ describe('Component: Nav', () => {
   it('should create an instance', () => {
     let component = new NavComponent();
     expect(component).toBeTruthy();
-  });
+  }),
+
+  it('should have as title \'bums\'',
+    inject([NavComponent], (app: NavComponent) => {
+      expect(app.title).toEqual('bums');
+    }));
+
 });
