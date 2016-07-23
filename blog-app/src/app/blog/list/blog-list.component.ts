@@ -21,7 +21,6 @@ export class BlogListComponent implements OnInit {
   constructor(private blogRepository: BlogRepository) { }
 
   ngOnInit() {
-    this.Blogs = this.blogRepository.getBlogs();
-    console.log(this.Blogs);
+   this.blogRepository.getBlogs().then(blogs => this.Blogs = blogs);
   }
 }

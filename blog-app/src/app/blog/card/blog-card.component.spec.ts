@@ -6,8 +6,11 @@ import { addProviders, async, inject } from '@angular/core/testing';
 import { BlogCardComponent } from './blog-card.component';
 
 describe('Component: BlogCard', () => {
+
+  /** it should instantiate */
   it('should create an instance', () => {
     let component = new BlogCardComponent();
     expect(component).toBeTruthy();
   });
+  
 });

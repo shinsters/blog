@@ -8,6 +8,6 @@ export class BlogRepository {
 
     /** Get all available blog entries */
     getBlogs(){
-        return BLOGS;
+        return Promise.resolve(BLOGS);
     }
 }
