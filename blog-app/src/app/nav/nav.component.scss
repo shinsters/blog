@@ -1,5 +1,21 @@
+@import '../../shared/style/colours.scss';
+@import '../../shared/style/fonts.scss';
+
 // the main container of the nav
 .container{
-    height: 10em;
+    height: 20em;
     width: 100%;
+    background-color: $gun-metal;
+    color: $light-cyan;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    // the title of the website
+    h1{
+        font-family: $handwriting;
+        font-size: 700%;
+        text-align: center;
+    }
 }
