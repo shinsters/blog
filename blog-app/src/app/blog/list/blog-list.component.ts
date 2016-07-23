@@ -16,11 +16,11 @@ import { Blog } from '../entities/blog'
 })
 export class BlogListComponent implements OnInit {
 
-  Blogs: Blog[];
+  blogs: Blog[];
 
   constructor(private blogRepository: BlogRepository) { }
 
   ngOnInit() {
-   this.blogRepository.getBlogs().then(blogs => this.Blogs = blogs);
+   this.blogRepository.getBlogs().then(blogs => this.blogs = blogs);
   }
 }
