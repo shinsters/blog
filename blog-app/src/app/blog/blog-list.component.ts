@@ -4,12 +4,12 @@ import { BlogRepository } from './services/blog.repository'
 
 @Component({
   moduleId: module.id,
-  selector: 'app-blog',
-  templateUrl: 'blog.component.html',
-  styleUrls: ['blog.component.css'],
+  selector: 'app-blog-list',
+  templateUrl: 'blog-list.component.html',
+  styleUrls: ['blog-list.component.css'],
   providers: [BlogRepository]
 })
-export class BlogComponent implements OnInit {
+export class BlogListComponent implements OnInit {
 
   constructor(private blogRepository: BlogRepository) { }
 

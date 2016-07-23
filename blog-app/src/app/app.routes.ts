@@ -1,8 +1,8 @@
 import { provideRouter, RouterConfig } from '@angular/router';
-import { BlogComponent } from '../app/blog/';
+import { BlogListComponent } from '../app/blog/';
 
 const routes: RouterConfig = [
-  { path: '', component: BlogComponent }
+  { path: '', component: BlogListComponent }
 ];
 
 export const appRouterProviders = [

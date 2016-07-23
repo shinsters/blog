@@ -3,11 +3,11 @@
 import { By }           from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 import { addProviders, async, inject } from '@angular/core/testing';
-import { BlogComponent } from './blog.component';
+import { BlogListComponent } from './blog-list.component';
 
-describe('Component: Blog', () => {
+describe('Component: Blog-List', () => {
   it('should create an instance', () => {
-    let component = new BlogComponent();
+    let component = new BlogListComponent(null);
     expect(component).toBeTruthy();
   });
 });
