@@ -3,5 +3,8 @@
 
 .container{
     position: absolute;
+    padding-top: 2em;
     top: $nav-height;
+    background-color: $light-cyan;
+    width: 100%;
 }
